@@ -15,7 +15,7 @@
         android:layout_weight="1">
 
         <TextView
-            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+
             style="@style/TeamText"
             android:layout_width="wrap_content"
             android:layout_alignParentTop="true"
@@ -37,7 +37,7 @@
 
         <TextView
             android:id="@+id/score_1"
-            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            style="@style/ScoreText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
@@ -62,7 +62,6 @@
         android:layout_weight="1">
 
         <TextView
-            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
             style="@style/TeamText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -84,7 +83,7 @@
 
         <TextView
             android:id="@+id/score_2"
-            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            style="@style/ScoreText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
@@ -102,5 +101,4 @@
             android:layout_centerVertical="true"
             android:onClick="increaseScore" />
     </RelativeLayout>
-
 </LinearLayout>
