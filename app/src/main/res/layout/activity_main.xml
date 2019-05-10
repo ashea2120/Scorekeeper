@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    style="@style/ScoreText">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -14,7 +15,10 @@
         android:layout_weight="1">
 
         <TextView
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            style="@style/TeamText"
             android:layout_width="wrap_content"
+            android:layout_alignParentTop="true"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
@@ -28,11 +32,12 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
             android:layout_centerVertical="true"
-            android:onClick="decreaseScore"
+            android:onClick="decreaseScore"></ImageButton>
 
 
         <TextView
             android:id="@+id/score_1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
@@ -44,16 +49,9 @@
             style="@style/PlusButtons"
             android:layout_width="@dimen/button_size"
             android:layout_height="@dimen/button_size"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="288dp"
-            android:layout_marginLeft="288dp"
-            android:layout_marginEnd="27dp"
-            android:layout_marginRight="27dp"
-            android:layout_marginBottom="147dp"
+            android:layout_centerVertical="true"
             android:onClick="increaseScore" />
 
     </RelativeLayout>
@@ -64,8 +62,11 @@
         android:layout_weight="1">
 
         <TextView
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            style="@style/TeamText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:text="@string/team_2" />
@@ -83,6 +84,7 @@
 
         <TextView
             android:id="@+id/score_2"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
@@ -95,12 +97,9 @@
             style="@style/PlusButtons"
             android:layout_width="@dimen/button_size"
             android:layout_height="@dimen/button_size"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:layout_marginStart="301dp"
-            android:layout_marginLeft="301dp"
-
             android:onClick="increaseScore" />
     </RelativeLayout>
 
